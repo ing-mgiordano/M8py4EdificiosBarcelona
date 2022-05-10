@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EdificiosDeBarcelona</title>
+  </head>
+  <body>
+    <h1>Edificios de Barcelona</h1>
+
+    <h3>Ingrese los datos</h3>
+
+    Nombre <input type="text" id="nombre-edificio" /> <br><br>
+    Plantas <input type="number" id="pisos-edificio" /> <br><br>
+    Superficie(m2) <input type="number" id="superficie-edificio" /> <br><br>
+    Tipo de edificio <select id="opciones">
+      <option enabled="seleccion">Seleccione</option>
+      <option value="HOSPITAL">Hospital</option>
+      <option value="HOTEL">Hotel</option>
+      <option value="CINE">Cine</option>
+    </select>
+    <br><br>
+    <button id="button-crear-edificio">Dar de Alta</button>
+    <button id="button-eliminar-edificio">Dar de Baja</button>
+    <button id="button-mostrar-edificio">Mostrar Edificio</button>
+    <br><br>
+    <p id="mostrar-edificio"></p>
+    <p id="hospital"></p>
+    <table>
+        <tr>
+            <th>HOSPITALES</th>
+            <th>.....</th>
+            <th>.....</th>
+            <th>.....</th>
+            <th>.....</th>
+            <th>HOTELES</th>
+            <th>.....</th>
+            <th>.....</th>
+            <th>.....</th>
+            <th>.....</th>
+            <th>CINES</th>
+        </tr>
+        <tr>
+            <td valign="top" id="hospitales"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td valign="top" id="hoteles"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td valign="top" id="cines"></td>
+        </tr>
+    </table>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
